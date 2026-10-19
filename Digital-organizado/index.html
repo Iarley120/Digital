@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Digital Suprema</title>
+    <!-- Font Awesome para Ícones Modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <div class="bg-grafico"></div>
+
+    <div id="alerta" class="notificacao">
+        <i class="fa-solid fa-circle-check"></i> <span id="alerta-texto">Sucesso!</span>
+    </div>
+
+    <button id="subir-topo" class="btn-topo" data-action="subir-topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Menu Superior Completo -->
+    <header>
+        <nav class="nav-container">
+            <a href="#inicio" class="logo">AuraDigital</a>
+            <div class="header-acoes">
+                <ul class="menu" id="menu-navegacao">
+                    <li><a href="#inicio" class="ativo"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfólio</a></li>
+                    <li><a href="#sobre"><i class="fa-solid fa-user-group"></i> Sobre</a></li>
+                    <li><a href="#lab"><i class="fa-solid fa-flask"></i> Lab</a></li>
+                    <li><a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+                </ul>
+                <button class="btn-tema" id="btn-tema" data-action="alternar-tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PÁGINA 1: INÍCIO -->
+        <section id="inicio">
+            <div class="hero">
+                <h1>Construímos Interfaces de <span>Próxima Geração</span></h1>
+                <p>Navegue instantaneamente e clique nos botões para ativar ações inteligentes em tempo real.</p>
+                <a href="#portfolio" class="btn">Explorar Portfólio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Performance Máxima</h3>
+                    <p>Troca instantânea de abas baseada em rotas nativas sem recarregar o navegador.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Efeito Paralaxe 3D</h3>
+                    <p>Passe o mouse devagar sobre os blocos para ver os elements físicos se inclinando.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 2: PORTFÓLIO -->
+        <section id="portfolio">
+            <h2 class="secao-titulo">Nossos Projetos</h2>
+            <p class="secao-subtitulo">Clique nos botões de filtro abaixo para organizar o catálogo em tempo real.</p>
+            
+            <div class="filtros-container">
+                <button class="btn-filtro ativo" data-filtro="todos">Todos</button>
+                <button class="btn-filtro" data-filtro="web">Aplicações Web</button>
+                <button class="btn-filtro" data-filtro="mobile">Mobile</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-categoria="web">
+                    <div class="portfolio-preview">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Painel Analytics">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Fintech Dashboard</h4>
+                        <p>Plataforma para monitoramento de ativos e fluxos com dados em tempo real.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-categoria="mobile">
+                    <div class="portfolio-preview">
+                        <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&w=600&q=80" alt="App Mobile">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Crypto Wallet App</h4>
+                        <p>Aplicativo móvel focado em transações de alta velocidade e custódia segura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 3: SOBRE NÓS -->
+        <section id="sobre">
+            <h2 class="secao-titulo">Quem Somos</h2>
+            <p class="secao-subtitulo">Engenharia rigorosa aplicada na criação de produtos memoráveis.</p>
+            
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <p>Combinamos design puro com lógica matemática. O resultado são ecossistemas limpos, incrivelmente atraentes e calibrados para entregar a melhor experiência.</p>
+                    <p>Nosso laboratório foca em criar estruturas que dão feedbacks visuais imediatos para os usuários ao menor sinal de interação física.</p>
+                </div>
+                
+                <div class="carrossel">
+                    <div class="depoimento ativo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80" alt="Clara">
+                        <p>"A velocidade de resposta e a beleza da interface transformaram completamente nossa operação."</p>
+                        <h5>Clara Mendes</h5>
+                    </div>
+                    <div class="depoimento">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80" alt="Lucas">
+                        <p>"Estrutura impecável. O sistema de carregamento acelerado reduziu drasticamente nossa taxa de rejeição."</p>
+                        <h5>Lucas Ramos</h5>
+                    </div>
+                    <div class="carrossel-setas">
+                        <button class="seta" data-depoimento="-1"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="seta" data-depoimento="1"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 4: LAB -->
+        <section id="lab">
+            <h2 class="secao-titulo">Laboratório Interativo</h2>
+            <p class="secao-subtitulo">Simule orçamentos estruturados de projetos avançados com cálculo de escopo dinâmico e faturamento simulado.</p>
+            
+            <div class="lab-container">
+                <div class="calc-box">
+                    <!-- Linha 1: Plataforma e Design -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="calc-grupo" style="margin-bottom: 0;">
+                            <label><i class="fa-solid fa-layer-group"></i> Plataforma Base</label>
+                            <select id="calc-base">
+                                <option value="1500">Landing Page Premium - R$ 1.500</option>
+                                <option value="3500">Aplicações Web Complexas - R$ 3.500</option>
+                                <option value="5000">Sistemas Customizados SaaS - R$ 5.000</option>
+                            </select>
+                        </div>
+                        <div class="calc-grupo" style="margin-bottom: 0;">
+                            <label><i class="fa-solid fa-compass-drafting"></i> Complexidade UI/UX</label>
+                            <select id="calc-ui">
+                                <option value="0">Design Padrão (Incluso)</option>
+                                <option value="700">Design UI Exclusivo (+ R$ 700)</option>
+                                <option value="1500">Identidade Visual e Branding (+ R$ 1.500)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Linha 2: Prazo e Idiomas -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="calc-grupo" style="margin-bottom: 0;">
+                            <label><i class="fa-solid fa-business-time"></i> Prazo de Entrega</label>
+                            <select id="calc-prazo">
+                                <option value="1">Cronograma Regular (Normal)</option>
+                                <option value="1.3">Urgência Crítica (+30% Taxa de Aceleração)</option>
+                            </select>
+                        </div>
+                        <div class="calc-grupo" style="margin-bottom: 0;">
+                            <label><i class="fa-solid fa-language"></i> Idiomas</label>
+                            <select id="calc-idioma">
+                                <option value="0">Apenas Português PT-BR</option>
+                                <option value="600">Multi-idioma Integrado (+ R$ 600)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Linha 3: Banco de Dados e SEO -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="calc-grupo" style="margin-bottom: 0;">
+                            <label><i class="fa-solid fa-database"></i> Arquitetura de Dados</label>
+                            <select id="calc-banco">
+                                <option value="0">Sem Armazenamento Dedicado</option>
+                                <option value="500">Banco SQL Estruturado (+ R$ 500)</option>
+                                <option value="950">NoSQL Nuvem de Alta Performance (+ R$ 950)</option>
+                            </select>
+                        </div>
+                        <div class="calc-grupo" style="margin-bottom: 0;">
+                            <label><i class="fa-solid fa-gauge-high"></i> SEO & Otimização</label>
+                            <select id="calc-seo">
+                                <option value="0">Otimização Essencial (Incluso)</option>
+                                <option value="450">SEO Avançado + Core Web Vitals (+ R$ 450)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Controle Deslizante Avançado de Telas -->
+                    <div class="calc-grupo" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 0.8rem;">
+                            <label><i class="fa-solid fa-file-code"></i> Volume de Telas / Páginas</label>
+                            <span id="valor-telas" style="color: var(--cor-principal);">1 Tela</span>
+                        </div>
+                        <input type="range" id="calc-telas" min="1" max="15" value="1" step="1" style="width: 100%; height: 6px; accent-color: var(--cor-principal); cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--cor-texto-suave); margin-top: 0.4rem;">
+                            <span>1 Tela (Base)</span>
+                            <span id="txt-desconto" style="color: var(--cor-sucesso); font-weight: 600;">Desconto Progressivo: 0%</span>
+                            <span>15 Telas (Máx)</span>
+                        </div>
+                    </div>
+
+                    <!-- Checkboxes de Módulos -->
+                    <div class="calc-grupo" style="margin-bottom: 1.5rem;">
+                        <label><i class="fa-solid fa-cubes"></i> Recursos Adicionais Necessários</label>
+                        <div class="checkbox-container">
+                            <label class="check-item"><input type="checkbox" value="600"> Modo Escuro / Claro (+ R$ 600)</label>
+                            <label class="check-item"><input type="checkbox" value="800"> Autenticação & LGPD (+ R$ 800)</label>
+                            <label class="check-item"><input type="checkbox" value="1100"> Gateway de Pagamento (+ R$ 1.100)</label>
+                            <label class="check-item"><input type="checkbox" value="900"> Painel Admin Exclusivo (+ R$ 900)</label>
+                        </div>
+                    </div>
+
+                    <!-- Gráfico da Proporção do Orçamento -->
+                    <div style="margin-bottom: 1.5rem; background: rgba(255,255,255,0.02); padding: 1.2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--cor-texto-suave); margin-bottom: 0.6rem;">
+                            <span>Distribuição de Esforço Técnico Estimado</span>
+                        </div>
+                        <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; display: flex;">
+                            <div id="barra-design" style="width: 30%; height: 100%; background: var(--cor-principal); transition: var(--transicao);"></div>
+                            <div id="barra-dev" style="width: 70%; height: 100%; background: var(--cor-sucesso); transition: var(--transicao);"></div>
+                        </div>
+                        <div style="display: flex; gap: 1.5rem; margin-top: 0.6rem; font-size: 0.8rem;">
+                            <span style="display: flex; align-items: center; gap: 0.4rem; color: var(--cor-texto-suave);"><b style="color: var(--cor-principal);">●</b> Design (UI/UX)</span>
+                            <span style="display: flex; align-items: center; gap: 0.4rem; color: var(--cor-sucesso);"><b style="color: var(--cor-sucesso);">●</b> Engenharia (Código)</span>
+                        </div>
+                    </div>
+
+                    <!-- Resumo Discriminado do Pedido -->
+                    <div id="resumo-pedido" style="background: rgba(0, 0, 0, 0.2); padding: 1.2rem; border-radius: 12px; border-left: 4px solid var(--cor-principal); font-size: 0.9rem; color: var(--cor-texto-suave); margin-bottom: 1.5rem;">
+                        <div style="font-weight: 700; color: var(--cor-texto); margin-bottom: 0.5rem; font-size: 0.95rem;"><i class="fa-solid fa-receipt"></i> Itens do seu Escopo:</div>
+                        <ul id="lista-resumo" style="list-style: none; display: flex; flex-direction: column; gap: 0.3rem; padding-left: 0.2rem;"></ul>
+                    </div>
+
+                    <div class="calc-resultado" style="margin-top: 0;">
+                        <h4>Investimento Total Estimado</h4>
+                        <div class="preco" id="preco-final">R$ 1.500,00</div>
+                    </div>
+                </div>
+
+                <div class="faq-box">
+                    <div class="faq-item">
+                        <div class="faq-pergunta">O site funciona em celulares? <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-resposta">Sim, o design é 100% responsivo e a disposição geométrica se molda perfeitamente a telas de computadores, tablets ou celulares.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-pergunta">Como as imagens carregam tão rápido? <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-resposta">Utilizamos compressão inteligente de ativos em formatos de nova geração e as requisições ocorrem de forma paralela via aceleração física por CSS.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-pergunta">O que significa o prazo com Urgência? <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-resposta">Ao acionar o modo de urgência crítica, nossa fábrica realoca desenvolvedores e prioriza o processamento em paralelo para adiantar em até 40% a data de entrega final.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 5: CONTATO -->
+        <section id="contato">
+            <h2 class="secao-titulo">Fale Conosco</h2>
+            <p class="secao-subtitulo">Envie uma proposta e teste o simulador de envio com carregamento em tempo real.</p>
+            
+            <div class="contato-container">
+                <form id="meuFormulario">
+                    <div class="form-grupo">
+                        <label>Nome Completo</label>
+                        <input type="text" name="nome" placeholder="Seu nome" autocomplete="name" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label>E-mail de Trabalho</label>
+                        <input type="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" rows="4" placeholder="Descreva brevemente o seu objetivo..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Enviar Proposta <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AuraDigital. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Lógica de Controle JavaScript -->
+        <script src="assets/js/script.js" defer></script>
+
+</body>
+</html>
