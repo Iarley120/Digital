@@ -6,12 +6,17 @@ Site institucional interativo separado em arquivos e pastas para facilitar manut
 
 text
 AuraDigital-organizado/
-├── index.html
-├── assets/
+index.html
+
+ assets/
 │   ├── css/
+
 │   │   └── style.css
+
 │   └── js/
+
 │       └── script.js
+
 └── README.md
 
 
