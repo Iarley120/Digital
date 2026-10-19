@@ -5,21 +5,19 @@ Site institucional interativo separado em arquivos e pastas para facilitar manut
 ## Estrutura
 
 text
-
 AuraDigital-organizado/
+├── index.html 
 
-├── index.html
-│
 ├── assets/
-│   │
+
 │   ├── css/
-│   │
+
 │   │   └── style.css
-│   │
+
 │   └── js/
-│       │
+
 │       └── script.js
-│
+
 └── README.md
 
 
