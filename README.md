@@ -9,17 +9,17 @@ text
 AuraDigital-organizado/
 
 ├── index.html
-
+│
 ├── assets/
-
+│   │
 │   ├── css/
-
+│   │
 │   │   └── style.css
-
+│   │
 │   └── js/
-
+│       │
 │       └── script.js
-
+│
 └── README.md
 
 
