@@ -5,10 +5,13 @@ Site institucional interativo separado em arquivos e pastas para facilitar manut
 ## Estrutura
 
 text
-AuraDigital-organizado/
-index.html
 
- assets/
+AuraDigital-organizado/
+
+├── index.html
+
+├── assets/
+
 │   ├── css/
 
 │   │   └── style.css
